@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="商品详情"
+        android:id="@+id/text_close"
+        android:textSize="18sp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simp_view_det"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        fresco:placeholderImage="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/text_name_det"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:text="dafdfasf"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_price_det"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:text="dafdfasf"
+        android:textColor="#f00"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:background="#f00"
+            android:text="加入购物车"
+            android:id="@+id/text_add_cart"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
